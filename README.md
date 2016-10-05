@@ -7,5 +7,5 @@ How to use the image
 --------------------
 Youtrack stores its data in the `/data/youtrack` directory inside the container. It's recommended to mount it:
 ```
-docker run -p 8080:8080 -v `pwd`/youtrack:/data/youtrack sjoerdmulder/youtrack:latest
+docker run -p 8080:8080 -v `pwd`/youtrack:/data/youtrack fibritso/youtrack:latest
 ```
