@@ -1,8 +1,8 @@
 FROM java:8
 
-MAINTAINER Sjoerd Mulder <sjoerd@sagent.io>
+MAINTAINER Hanat <fibritso@gmail.com>
 
-ENV YOUTRACK_VERSION 6.5.16953
+ENV YOUTRACK_VERSION 7.0.27588
 
 ADD https://download.jetbrains.com/charisma/youtrack-$YOUTRACK_VERSION.jar youtrack-$YOUTRACK_VERSION.jar
 ADD https://download.jetbrains.com/charisma/youtrack-$YOUTRACK_VERSION.jar.sha256 youtrack-$YOUTRACK_VERSION.jar.sha256
