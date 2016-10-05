@@ -13,4 +13,4 @@ EXPOSE 8080
 
 VOLUME /data/youtrack
 
-CMD ["java", "-Xmx1g", "-XX:MaxMetaspaceSize=250m", "-Djava.awt.headless=true", "-Ddatabase.location=/data/youtrack", "-jar", "youtrack-6.5.16953.jar", "8080"]
+CMD ["java", "-Xmx1g", "-XX:MaxMetaspaceSize=250m", "-Djava.awt.headless=true", "-Ddatabase.location=/data/youtrack", "-jar", "youtrack-$YOUTRACK_VERSION.jar", "8080"]
