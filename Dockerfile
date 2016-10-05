@@ -9,7 +9,7 @@ ADD https://download.jetbrains.com/charisma/youtrack-$YOUTRACK_VERSION.jar.sha25
 
 RUN sha256sum -c youtrack-$YOUTRACK_VERSION.jar.sha256
 
-RUN mv youtrack-$YOUTRACK_VERSION.jar youtrack.jar
+RUN cp youtrack-$YOUTRACK_VERSION.jar youtrack.jar
 
 EXPOSE 8080
 
