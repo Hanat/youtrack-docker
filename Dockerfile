@@ -9,10 +9,8 @@ ADD https://download.jetbrains.com/charisma/youtrack-$YOUTRACK_VERSION.jar.sha25
 
 RUN sha256sum -c youtrack-$YOUTRACK_VERSION.jar.sha256
 
-RUN cp youtrack-$YOUTRACK_VERSION.jar youtrack.jar
-
 EXPOSE 8080
 
 VOLUME /data/youtrack
 
-CMD ["java", "-Xmx1g", "-XX:MaxMetaspaceSize=250m", "-Djava.awt.headless=true", "-Ddatabase.location=/data/youtrack", "-jar", "youtrack.jar", "8080"]
+CMD ["java", "-Xmx1g", "-XX:MaxMetaspaceSize=250m", "-Djava.awt.headless=true", "-Ddatabase.location=/data/youtrack", "-jar", "youtrack-7.0.27588.jar", "8080"]
